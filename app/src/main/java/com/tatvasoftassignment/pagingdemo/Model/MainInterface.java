@@ -1,4 +1,4 @@
-package com.tatvasoftassignment.pagingdemo;
+package com.tatvasoftassignment.pagingdemo.Model;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

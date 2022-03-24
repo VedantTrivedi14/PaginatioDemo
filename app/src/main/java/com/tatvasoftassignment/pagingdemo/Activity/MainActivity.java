@@ -1,4 +1,4 @@
-package com.tatvasoftassignment.pagingdemo;
+package com.tatvasoftassignment.pagingdemo.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 
+import com.tatvasoftassignment.pagingdemo.Adapter.MainAdapter;
+import com.tatvasoftassignment.pagingdemo.Model.MainData;
+import com.tatvasoftassignment.pagingdemo.Model.MainInterface;
+import com.tatvasoftassignment.pagingdemo.R;
 import com.tatvasoftassignment.pagingdemo.databinding.ActivityMainBinding;
 
 import org.json.JSONArray;
@@ -32,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         adapter = new MainAdapter(this,dataArrayList);
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(this));

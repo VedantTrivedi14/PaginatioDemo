@@ -1,4 +1,4 @@
-package com.tatvasoftassignment.pagingdemo;
+package com.tatvasoftassignment.pagingdemo.Model;
 
 public class MainData {
     private String image,name;

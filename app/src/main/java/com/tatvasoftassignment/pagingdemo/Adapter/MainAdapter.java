@@ -1,9 +1,7 @@
-package com.tatvasoftassignment.pagingdemo;
+package com.tatvasoftassignment.pagingdemo.Adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -12,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.tatvasoftassignment.pagingdemo.Model.MainData;
+import com.tatvasoftassignment.pagingdemo.R;
 import com.tatvasoftassignment.pagingdemo.databinding.ListItemBinding;
 
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
     @NonNull
     @Override
     public MainAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ListItemBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()),R.layout.list_item,parent,false);
+        ListItemBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.list_item,parent,false);
         return new ViewHolder(binding);
     }
 
